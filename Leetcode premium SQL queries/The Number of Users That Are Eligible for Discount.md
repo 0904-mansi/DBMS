@@ -20,3 +20,17 @@ END
 
 # using procedure
 
+```sql
+
+CREATE PROCEDURE getUserIDs (startDate DATE,
+endDate DATE, minAmount INT)
+BEGIN
+
+# Write your MySQL query statement below.
+SELECT DISTINCT user_id
+FROM Purchases
+WHERE time stamp BETWEEN startDate AND endDate
+AND amount >= minAmount
+
+END
+```
