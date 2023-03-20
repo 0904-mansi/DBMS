@@ -1,10 +1,9 @@
 # Day 1 to 6
 
- 1. [create table](#create)
- 2. [SELECT Clause](#select)
- 3. 
-  FROM Clause: From which table in the database do you have to select data?
-  WHERE Clause: It forms the condition based on which data have to be queried.
+ 1. [create table](#create-table)
+ 2. [SELECT Clause](#select-clause)
+ 3. [WHERE Clause](#where-Clause)
+ 4. 
   DELETE Statement: For deletion tasks.
   INSERT INTO: For insertion tasks.
   AND and OR operator: Selecting data based on AND or operator.
@@ -12,7 +11,7 @@
   NOT Operator: It will select the data which is not based on the given condition.
   
   
-# create table
+# Create table
  ## SQL CREATE TABLE Statement
 
 A Table is a combination of rows and columns. For creating a table we have to define the structure of a table by adding names to columns and providing data type and size of data to be stored in columns.
@@ -66,4 +65,59 @@ CREATE TABLE new_table_name AS
     SELECT column1, column2,...
     FROM existing_table_name
     WHERE ....;
+```
+
+
+# Select clause
+
+Select is the most commonly used statement in SQL. The SELECT Statement in SQL is used to retrieve or fetch data from a database. We can fetch either the entire table or according to some specified rules. 
+
+To fetch the entire table or all the fields in the table:
+```
+ SELECT * FROM table_name; 
+```
+
+Example
+```
+SELECT column1,column2 FROM table_name 
+column1 , column2: names of the fields of the table
+table_name: from where we want to apply query
+```
+# WHERE Clause
+
+WHERE keyword is used for fetching filtered data in a result set. It is used to fetch data according to a particular criteria. WHERE keyword can also be used to filter data by matching patterns.
+
+## Basic Syntax: 
+
+```
+SELECT column1,column2 FROM table_name WHERE column_name operator value;
+```
+![image](https://user-images.githubusercontent.com/81081105/226430500-379b9fa9-1f6d-4a43-bf47-e055dbc6be36.png)
+
+# BETWEEN operator
+
+It is used to fetch filtered data in a given range inclusive of two values. Basic Syntax: SELECT column1,column2 FROM table_name WHERE column_name BETWEEN value1 AND value2;
+
+To fetch records of students where ROLL_NO is between 1 and 3 (inclusive)
+```
+SELECT * FROM Student WHERE ROLL_NO BETWEEN 1 AND 3;
+```
+
+# LIKE operator
+
+It is used to fetch filtered data by searching for a particular pattern in where clause. Basic Syntax: SELECT column1,column2 FROM table_name WHERE column_name LIKE pattern;
+
+ To fetch records of students where NAME starts with letter S.
+```
+SELECT * FROM Student WHERE NAME LIKE 'S%'; 
+```
+The ‘%'(wildcard) signifies the later characters here which can be of any length and value.More about wildcards will be discussed in the later set
+
+# IN operator
+
+It is used to fetch filtered data same as fetched by ‘=’ operator just the difference is that here we can specify multiple values for which we can get the result set. Basic Syntax: SELECT column1,column2 FROM table_name WHERE column_name IN (value1,value2,..);
+
+  To fetch NAME and ADDRESS of students where Age is 18 or 20.
+```
+SELECT NAME,ADDRESS FROM Student WHERE Age IN (18,20);
 ```
