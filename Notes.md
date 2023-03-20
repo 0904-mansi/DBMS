@@ -1,6 +1,6 @@
 # Day 1 to 6
 
- 1. [Creating Database](#create)
+ 1. [create table](#create)
  2. [SELECT Clause](#select)
  3. 
   FROM Clause: From which table in the database do you have to select data?
@@ -12,7 +12,7 @@
   NOT Operator: It will select the data which is not based on the given condition.
   
   
-# Create table
+# create table
  ## SQL CREATE TABLE Statement
 
 A Table is a combination of rows and columns. For creating a table we have to define the structure of a table by adding names to columns and providing data type and size of data to be stored in columns.
