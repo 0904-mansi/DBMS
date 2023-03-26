@@ -3,9 +3,9 @@
  1. [create table](#create-table)
  2. [SELECT Clause](#select-clause)
  3. [WHERE Clause](#where-Clause)
- 4. 
-  DELETE Statement: For deletion tasks.
-  INSERT INTO: For insertion tasks.
+ 4. [DELETE Clause](#delete-clause)
+ 5. [INSERT](#insert)
+ 6. 
   AND and OR operator: Selecting data based on AND or operator.
   Drop and Truncate: It will drop or truncate the collection as per the condition.
   NOT Operator: It will select the data which is not based on the given condition.
@@ -121,3 +121,35 @@ It is used to fetch filtered data same as fetched by ‘=’ operator just the d
 ```
 SELECT NAME,ADDRESS FROM Student WHERE Age IN (18,20);
 ```
+
+# DELETE clause
+
+The DELETE Statement in SQL is used to delete existing records from a table. We can delete a single record or multiple records depending on the condition we specify in the WHERE clause.
+
+Syntax: Basic 
+
+DELETE FROM table_name WHERE some_condition;
+
+# INSERT
+
+The INSERT INTO statement of SQL is used to insert a new row/record in a table. There are two ways of using the INSERT INTO statement for inserting rows.
+
+`
+Syntax:
+
+    INSERT INTO table_name (column1, column2, column3) 
+
+    VALUES ( value1, value2, value3); 
+    
+    or 
+    
+    INSERT INTO table_name VALUES (value1, value2, value3); 
+    
+    
+`
+
+  inserting all columns of a table: We can copy all the data of a table and insert it into a different table.
+
+Syntax:
+
+    INSERT INTO first_table SELECT * FROM second_table;
