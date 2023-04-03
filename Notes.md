@@ -6,7 +6,8 @@
  4. [DELETE Clause](#delete-clause)
  5. [INSERT](#insert)
  6. [Drop and Truncate](#drop-truncate)
- 7. 
+ 7. [with](#with)
+ 8. 
   AND and OR operator: Selecting data based on AND or operator.
   Drop and Truncate: It will drop or truncate the collection as per the condition.
   NOT Operator: It will select the data which is not based on the given condition.
@@ -182,3 +183,7 @@ database_name: Name of the database to be deleted.
 ![image](https://user-images.githubusercontent.com/81081105/229492833-dbfb0810-35f9-4437-834a-53e07c9da09d.png)
 
 Note :  A TRUNCATE TABLE statement can be rolled back in SQL Server by using a transaction but delete statement can't be roll back.
+
+# With
+
+
