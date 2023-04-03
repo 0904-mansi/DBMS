@@ -5,7 +5,8 @@
  3. [WHERE Clause](#where-Clause)
  4. [DELETE Clause](#delete-clause)
  5. [INSERT](#insert)
- 6. 
+ 6. [Drop and Truncate](#drop-truncate)
+ 7. 
   AND and OR operator: Selecting data based on AND or operator.
   Drop and Truncate: It will drop or truncate the collection as per the condition.
   NOT Operator: It will select the data which is not based on the given condition.
@@ -153,3 +154,31 @@ Syntax:
 Syntax:
 
     INSERT INTO first_table SELECT * FROM second_table;
+    
+# Drop Truncate
+
+## DROP
+
+DROP is used to delete a whole database or just a table.The DROP statement destroys objects like an existing database, table, index, or view. A DROP statement in SQL removes a component from a relational database management system (RDBMS). 
+
+Syntax:
+`
+DROP object object_name
+
+Examples:
+DROP TABLE table_name;
+table_name: Name of the table to be deleted.
+
+DROP DATABASE database_name;
+database_name: Name of the database to be deleted.
+`
+
+# DROP vs TRUNCATE
+
+    Truncate is normally ultra-fast and its ideal for deleting data from a temporary table.
+    Truncate preserves the structure of the table for future use, unlike drop table where the table is deleted with its full structure.
+    Table or Database deletion using DROP statement cannot be rolled back, so it must be used wisely.
+
+![image](https://user-images.githubusercontent.com/81081105/229492833-dbfb0810-35f9-4437-834a-53e07c9da09d.png)
+
+Note :  A TRUNCATE TABLE statement can be rolled back in SQL Server by using a transaction but delete statement can't be roll back.
