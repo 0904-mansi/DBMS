@@ -7,10 +7,8 @@
  5. [INSERT](#insert)
  6. [Drop and Truncate](#drop-truncate)
  7. [with](#with)
- 8. 
-  AND and OR operator: Selecting data based on AND or operator.
-  Drop and Truncate: It will drop or truncate the collection as per the condition.
-  NOT Operator: It will select the data which is not based on the given condition.
+ 8. [OFFSET-FETCH](#offset-fetch)
+ 9. 
   
   
 # Create table
@@ -186,4 +184,49 @@ Note :  A TRUNCATE TABLE statement can be rolled back in SQL Server by using a t
 
 # With
 
+1. The clause is used for defining a temporary relation such that the output of this temporary relation is available and is used by the query that is associated with the WITH clause.
+2. Queries that have an associated WITH clause can also be written using nested sub-queries but doing so add more complexity to read/debug the SQL query.
+3. WITH clause is not supported by all database system.
+4. The name assigned to the sub-query is treated as though it was an inline view or table
 
+Syntax: 
+`
+WITH temporaryTable (averageValue) as
+    (SELECT avg(Attr1)
+    FROM Table)
+    SELECT Attr1
+    FROM Table, temporaryTable
+    WHERE Table.Attr1 > temporaryTable.averageValue;
+`
+
+# OFFSET-FETCH
+OFFSET and FETCH Clause are used in conjunction with SELECT and ORDER BY clause to provide a means to retrieve a range of records.
+
+## OFFSET
+
+The OFFSET argument is used to identify the starting point to return rows from a result set. Basically, it exclude the first set of records.(it deletes number of rows mentioned with offset command)
+
+Note:
+
+    OFFSET can only be used with ORDER BY clause. It cannot be used on its own.
+    OFFSET value must be greater than or equal to zero. It cannot be negative, else return error.
+    
+Syntax:
+`
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+ORDER BY column_name
+OFFSET rows_to_skip ROWS;
+`
+## FETCH
+
+The FETCH argument is used to return a set of number of rows. FETCH can’t be used itself, it is used in conjunction with OFFSET.
+Syntax:
+`
+SELECT column_name(s)
+FROM table_name
+ORDER BY column_name
+OFFSET rows_to_skip
+FETCH NEXT number_of_rows ROWS ONLY;
+`
