@@ -9,7 +9,8 @@
  7. [with](#with)
  8. [OFFSET-FETCH](#offset-fetch)
  9. [Aliases](#aliases)
-  
+ 10. [Wildcard Operator](#wildcard)
+ 11. [ALTER (ADD, DROP, MODIFY)](#alter)
   
 # Create table
  ## SQL CREATE TABLE Statement
@@ -248,3 +249,11 @@ Basic Syntax:
     column: fields in the table
     alias_name: temporary alias name to be used in replacement of original column name 
     table_name: name of table
+
+# Wildcard
+
+![image](https://user-images.githubusercontent.com/81081105/229745580-ef047193-8613-48b0-80fe-d178fd459578.png)
+
+# Alter
+
+The ALTER TABLE statement is used to add, remove, or modify columns in an existing table. The ALTER TABLE statement is also used to add and remove various constraints on existing tables.
