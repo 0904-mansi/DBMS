@@ -8,7 +8,7 @@
  6. [Drop and Truncate](#drop-truncate)
  7. [with](#with)
  8. [OFFSET-FETCH](#offset-fetch)
- 9. 
+ 9. [Aliases](#aliases)
   
   
 # Create table
@@ -230,3 +230,21 @@ ORDER BY column_name
 OFFSET rows_to_skip
 FETCH NEXT number_of_rows ROWS ONLY;
 `
+
+# Aliases
+
+Aliases are the temporary names given to table or column for the purpose of a particular SQL query. It is used when name of column or table is used other than their original names, but the modified name is only temporary.
+
+1. Aliases are created to make table or column names more readable.
+2. The renaming is just a temporary change and table name does not change in the original database.
+3. Aliases are useful when table or column names are big or not very readable.
+4. These are preferred when there are more than one table involved in a query.
+
+Basic Syntax:
+
+    For column alias:
+
+    SELECT column as alias_name FROM table_name;
+    column: fields in the table
+    alias_name: temporary alias name to be used in replacement of original column name 
+    table_name: name of table
