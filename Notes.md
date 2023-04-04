@@ -257,3 +257,50 @@ Basic Syntax:
 # Alter
 
 The ALTER TABLE statement is used to add, remove, or modify columns in an existing table. The ALTER TABLE statement is also used to add and remove various constraints on existing tables.
+
+# Like
+
+![image](https://user-images.githubusercontent.com/81081105/229759927-0738dbde-7bda-4291-be68-5cf1dece04c4.png)
+
+# Between
+
+The SQL BETWEEN condition allows you to easily test if an expression is within a range of values (inclusive). The values can be text, date, or numbers. It can be used in a SELECT, INSERT, UPDATE, or DELETE statement. The SQL BETWEEN Condition will return the records where expression is within the range of value1 and value2. 
+
+Syntax: 
+ 
+`
+   SELECT column_name(s)
+   FROM table_name
+   WHERE column_name BETWEEN value1 AND value2;
+`
+
+# IN
+
+IN operator allows you to easily test if the expression matches any value in the list of values. It is used to remove the need of multiple OR condition in SELECT, INSERT, UPDATE or DELETE. You can also use NOT IN to exclude the rows in your list. We should note that any kind of duplicate entry will be retained. 
+Syntax: 
+ 
+`
+SELECT column_name(s)
+FROM table_name
+WHERE column_name IN (list_of_values);
+`
+
+# Switch case
+
+Sample Query:
+Consider a variable, department_name which is entered in the SQL code.
+`
+CASE department_name
+ WHEN 'CS'
+  THEN UPDATE Faculty SET
+  department='Computer Science';
+ WHEN 'EC'
+  THEN UPDATE Faculty SET
+  department='Electronics and Communication';
+ ELSE UPDATE Faculty SET
+ department='Humanities and Social Sciences';
+END CASE
+`
+
+# Aggregate-functions
+
