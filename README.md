@@ -6,6 +6,9 @@ https://takeuforward.org/interviews/must-do-questions-for-dbms-cn-os-interviews-
 
 https://www.geeksforgeeks.org/30-days-of-sql-from-basic-to-advanced-level/
 
+<img width="713" alt="image" src="https://github.com/0904-mansi/DBMS/assets/81081105/00959911-dc2c-450f-adfc-5e02676f6bd3">
+
+
 
 ![image](https://github.com/0904-mansi/DBMS/assets/81081105/14a2ed32-9911-4ffc-9466-7fda2fdd9732)
 
