@@ -21,6 +21,30 @@ https://www.geeksforgeeks.org/30-days-of-sql-from-basic-to-advanced-level/
 
 https://www.youtube.com/watch?v=gG7VyRXBfdg
 
+In summary, the main difference between "intersection" and "inner join" lies in their operations and syntax:
+
+    "Intersection" operates on entire result sets and returns the common rows between them.
+    "Inner join" operates on individual rows from two tables and returns only the rows that have matching values based on a specified join condition.
+
+ Cross Join:
+        A cross join generates a Cartesian product of rows from both tables, resulting in every combination of rows between the two tables.
+        In this case, the cross join would produce 3 * 5 = 15 rows.
+
+ Inner Join:
+        An inner join returns only the rows that have matching values in both tables based on the specified condition.
+        Let's say we join on ID, and there are no matching IDs between the two tables. In this case, the inner join would return an empty result set.
+
+   Self Join:
+        A self join is when a table is joined with itself. It is often used to compare rows within the same table.
+        Let's consider a self join on Table 1, where we compare each row with every other row.
+        The number of rows returned in a self join depends on the condition specified. If we join the table on ID, we would get 3 * (3 - 1) = 6 rows, as each row would be compared with every other row except itself.
+
+Now, let's calculate the counts for each type of join:
+
+    Cross Join: 15 rows
+    Inner Join: 0 rows (if no matching IDs)
+    Self Join (on Table 1): 6 rows
+
 Explain different languages present in DBMS.
 Following are various languages present in DBMS:
 
