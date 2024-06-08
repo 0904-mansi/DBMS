@@ -1,5 +1,8 @@
 # DBMS
 
+**We can't use aggregate functions with where clause**
+<img width="500" alt="image" src="https://github.com/0904-mansi/DBMS/assets/81081105/ecfa7c3f-d590-4534-8c51-450769ae9344">
+
 https://www.javatpoint.com/dbms-interview-questions
     
 https://takeuforward.org/interviews/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet/
