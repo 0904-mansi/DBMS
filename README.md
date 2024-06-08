@@ -8,6 +8,8 @@ https://www.geeksforgeeks.org/30-days-of-sql-from-basic-to-advanced-level/
 
 <img width="713" alt="image" src="https://github.com/0904-mansi/DBMS/assets/81081105/00959911-dc2c-450f-adfc-5e02676f6bd3">
 
+<img width="713" alt="Screenshot 2024-06-08 at 12 39 23 PM" src="https://github.com/0904-mansi/DBMS/assets/81081105/dbe78a2f-b0d8-4baa-bdbd-637bf9577a85">
+
 
 
 ![image](https://github.com/0904-mansi/DBMS/assets/81081105/14a2ed32-9911-4ffc-9466-7fda2fdd9732)
